@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="calculator">
+            <div class="inputBox">
+                <input id="inputId">
+            </div>
+            <div class="buttons2">
+                <button onclick="call('(')">(</button>
+                <button onclick="call(')')">)</button>
+                <button onclick="clearFunc()" >C</button>
+                <button onclick="allClearFunc()" class="sign acbut">AC</button>
+            </div>
+            <div class="buttons">
+
+                <button onclick="call(7)">7</button>
+                <button onclick="call(8)" >8</button>
+                <button onclick="call(9)">9</button>
+                <button onclick="call('-')" class="sign">-</button>
+                <button onclick="call('/')" class="sign">/</button>
+                <button onclick="call(4)">4</button>
+                <button onclick="call(5)">5</button>
+                <button onclick="call(6)">6</button>
+                <button onclick="call('+')" class="spanme sign">+</button>
+                <button onclick="call('*')" class="sign">x</button>
+                <button onclick="call(1)">1</button>
+                <button onclick="call(2)">2</button>
+                <button onclick="call(3)">3</button>
+                <button onclick="call('%')" class="sign">%</button>
+                <button onclick="call(0)">0</button>
+                <button onclick="call('.')">.</button>
+                <button onclick="call('00')">00</button>
+                <button onclick="equalFunc()" class="sign spanme2">=</button>
+
+            </div>
+        </div>
+    </div>
+    <h1 class="heading">Calculate like a <br> Pro.</h1>
+</body>
+
+<script src="app.js"></script>
+
+</html>
